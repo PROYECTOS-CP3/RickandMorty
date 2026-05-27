@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rick & Morty Explorer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Explorador de personajes</p>
+        <h1>Rick & Morty Explorer</h1>
+        <p class="hero-text">Busca y filtra personajes</p>
+      </div>
+      <div class="controls">
+        <label class="search-field" for="searchInput">
+          <span class="sr-only">Buscar personaje</span>
+          <span class="search-icon"><img src="img/search-alt-2-svgrepo-com.svg" alt="Buscar"></span>
+          <input id="searchInput" type="search" placeholder="Buscar personaje..." aria-label="Buscar personaje">
+        </label>
+        <label class="filter-select" for="stateFilter">
+          <span class="sr-only">Filtrar por estado</span>
+          <select id="stateFilter" aria-label="Filtrar por estado">
+            <option value="all">Todos</option>
+            <option value="alive">Vivos</option>
+            <option value="dead">Muertos</option>
+            <option value="unknown">Desconocido</option>
+          </select>
+        </label>
+      </div>
+    </section>
+
+    <section class="cards-grid" id="cardsGrid"></section>
+    <div class="page-actions">
+      <button id="prevPage" type="button">Anterior</button>
+      <span id="pageLabel">Page 1</span>
+      <button id="nextPage" type="button">Siguiente</button>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
